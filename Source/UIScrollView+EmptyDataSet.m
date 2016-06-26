@@ -828,6 +828,9 @@ Class dzn_baseClassToSwizzleForTarget(id target)
         _button = [UIButton buttonWithType:UIButtonTypeCustom];
         _button.translatesAutoresizingMaskIntoConstraints = NO;
         _button.backgroundColor = [UIColor clearColor];
+        _button.layer.cornerRadius = 5;
+        _button.layer.borderColor = [UIColor blackColor].CGColor;
+        _button.layer.borderWidth = 0.7;
         _button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
         _button.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
         _button.accessibilityIdentifier = @"empty set button";
